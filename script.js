@@ -6,7 +6,8 @@ function addTask() {
     alert("You must write somthing!");
   } else {
     let li = document.createElement("li");
-    li.innerHTML = input.value;
+    li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
   }
+  inputBox.value = "";
 }
